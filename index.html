@@ -16,6 +16,16 @@
   <body class="container">
     <!--Header-->
     <header class="header small-container">
+      <div class="mobile-logo">
+        <a href="index.html" class="logo"
+          ><span class="logo-color">Web</span>Studio</a
+        >
+        <button class="menu-button">
+          <svg class="menu">
+            <use href="./images/icons.svg#icon-mobile-menu"></use>
+          </svg>
+        </button>
+      </div>
       <div class="header-container">
         <a href="index.html" class="logo"
           ><span class="logo-color">Web</span>Studio</a
@@ -67,8 +77,11 @@
     <main>
       <!--Title and contact button-->
       <section class="main-title-section container">
+        <h1 class="m-t-main-title">
+          EFFECTIVE SOLUTIONS <br />FOR YOUR BUSINESS
+        </h1>
         <h1 class="main-title">
-          EFFECTIVE SOLUTIONS FOR <br />
+          EFFECTIVE SOLUTIONS FOR<br />
           YOUR BUSINESS
         </h1>
         <button data-modal-open type="button" class="main-button">
@@ -137,30 +150,13 @@
       </section>
       <!--Qualities-->
       <div class="qualities-container section">
-        <div class="qualities-icons small-container">
-          <rect class="qualities-rect">
-            <svg class="qualities-icon" id="icon-antenna">
-              <use href="./images/icons.svg#icon-antenna"></use>
-            </svg>
-          </rect>
-          <rect class="qualities-rect">
-            <svg class="qualities-icon" id="icon-clock">
-              <use href="./images/icons.svg#icon-clock"></use>
-            </svg>
-          </rect>
-          <rect class="qualities-rect">
-            <svg class="qualities-icon" id="icon-diagram">
-              <use href="./images/icons.svg#icon-diagram"></use>
-            </svg>
-          </rect>
-          <rect class="qualities-rect">
-            <svg class="qualities-icon" id="icon-astronaut">
-              <use href="./images/icons.svg#icon-astronaut"></use>
-            </svg>
-          </rect>
-        </div>
         <ul class="qualities-list small-container">
           <li class="qualities">
+            <rect class="qualities-rect">
+              <svg class="qualities-icon" id="icon-antenna">
+                <use href="./images/icons.svg#icon-antenna"></use>
+              </svg>
+            </rect>
             <h3 class="qualities-title">ATTENTION TO DETAILS</h3>
             <p class="qualities-content">
               We go into all the details and processes of your business to
@@ -168,6 +164,11 @@
             </p>
           </li>
           <li class="qualities">
+            <rect class="qualities-rect">
+              <svg class="qualities-icon" id="icon-clock">
+                <use href="./images/icons.svg#icon-clock"></use>
+              </svg>
+            </rect>
             <h3 class="qualities-title">PUNCTUALITY</h3>
             <p class="qualities-content">
               With us, you can feel safe and secure. An important principle of
@@ -175,6 +176,11 @@
             </p>
           </li>
           <li class="qualities">
+            <rect class="qualities-rect">
+              <svg class="qualities-icon" id="icon-diagram">
+                <use href="./images/icons.svg#icon-diagram"></use>
+              </svg>
+            </rect>
             <h3 class="qualities-title">PLANNING</h3>
             <p class="qualities-content">
               You will be able to observe and participate in every phase of
@@ -182,6 +188,11 @@
             </p>
           </li>
           <li class="qualities">
+            <rect class="qualities-rect">
+              <svg class="qualities-icon" id="icon-astronaut">
+                <use href="./images/icons.svg#icon-astronaut"></use>
+              </svg>
+            </rect>
             <h3 class="qualities-title">MODERN TECHNOLOGIES</h3>
             <p class="qualities-content">
               We use innovative tools to solve assigned tasks. It's time to
@@ -491,79 +502,81 @@
     <!--Footer-->
     <footer class="footer container">
       <div class="small-container footer-container">
-        <div>
-          <a href="index.html" class="logo footer-logo"
-            ><span class="logo-color">Web</span
-            ><span class="logo-second-color">Studio</span></a
-          >
-          <!--Adress-->
-          <address>
-            <ul class="footer-contacts">
-              <li class="footer-location footer-adress">
-                <a
-                  href="https://www.google.com/maps/place/695+Park+Ave,+New+York,+NY+10065,+USA/@40.7688994,-73.9676005,17z/data=!3m1!4b1!4m6!3m5!1s0x89c258ebe8836e8f:0xa007c44e7c4aa0eb!8m2!3d40.7688994!4d-73.9650256!16s%2Fg%2F11c250btd8?entry=ttu"
-                  class="adress location"
-                  >695 Park Ave, NY 10065, USA</a
-                >
-              </li>
-              <li class="footer-adress">
-                <a href="mailto:info@devstudio.com" class="adress"
-                  >info@devstudio.com</a
-                >
-              </li>
-              <li class="footer-adress">
-                <a href="tel:+12127724150" class="adress">+1 212-772-4150</a>
-              </li>
-            </ul>
-          </address>
-        </div>
-        <div class="footer-icon-list">
-          <h3 class="footer-icon-title">Find us on</h3>
-          <div class="footer-icon-container">
-            <a
-              href="https://www.instagram.com/"
-              target="_blank"
-              rel="nofollow noopener noreferrer"
-              class="footer-icon"
-              aria-label="Instagram"
+        <div class="footer-adress-icon">
+          <div class="logo-adress">
+            <a href="index.html" class="logo footer-logo"
+              ><span class="logo-color">Web</span
+              ><span class="logo-second-color">Studio</span></a
             >
-              <svg>
-                <use href="./images/icons.svg#icon-instagram"></use>
-              </svg>
-            </a>
-            <a
-              href="https://www.twitter.com/"
-              target="_blank"
-              rel="nofollow noopener noreferrer"
-              class="footer-icon"
-              aria-label="Twitter"
-            >
-              <svg>
-                <use href="./images/icons.svg#icon-twitter"></use>
-              </svg>
-            </a>
-            <a
-              href="https://www.facebook.com/"
-              target="_blank"
-              rel="nofollow noopener noreferrer"
-              class="footer-icon"
-              aria-label="Facebook"
-            >
-              <svg>
-                <use href="./images/icons.svg#icon-facebook"></use>
-              </svg>
-            </a>
-            <a
-              href="https://www.linkedin.com/"
-              target="_blank"
-              rel="nofollow noopener noreferrer"
-              class="footer-icon"
-              aria-label="Linkedin"
-            >
-              <svg>
-                <use href="./images/icons.svg#icon-linkedin"></use>
-              </svg>
-            </a>
+            <!--Adress-->
+            <address>
+              <ul class="footer-contacts">
+                <li class="footer-location footer-adress">
+                  <a
+                    href="https://www.google.com/maps/place/695+Park+Ave,+New+York,+NY+10065,+USA/@40.7688994,-73.9676005,17z/data=!3m1!4b1!4m6!3m5!1s0x89c258ebe8836e8f:0xa007c44e7c4aa0eb!8m2!3d40.7688994!4d-73.9650256!16s%2Fg%2F11c250btd8?entry=ttu"
+                    class="adress location"
+                    >695 Park Ave, NY 10065, USA</a
+                  >
+                </li>
+                <li class="footer-adress">
+                  <a href="mailto:info@devstudio.com" class="adress"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="footer-adress">
+                  <a href="tel:+12127724150" class="adress">+1 212-772-4150</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer-icon-list">
+            <h3 class="footer-icon-title">Find us on</h3>
+            <div class="footer-icon-container">
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+                class="footer-icon"
+                aria-label="Instagram"
+              >
+                <svg>
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+              <a
+                href="https://www.twitter.com/"
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+                class="footer-icon"
+                aria-label="Twitter"
+              >
+                <svg>
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+                class="footer-icon"
+                aria-label="Facebook"
+              >
+                <svg>
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+              <a
+                href="https://www.linkedin.com/"
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+                class="footer-icon"
+                aria-label="Linkedin"
+              >
+                <svg>
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
         <form
@@ -581,7 +594,12 @@
                 id="user_email"
                 placeholder="E-mail"
             /></label>
-            <button type="submit">Subscribe</button>
+            <button type="submit" class="subscribe-button">
+              <span>Subscribe</span>
+              <svg class="icon-send">
+                <use href="./images/icons.svg#icon-icon-send"></use>
+              </svg>
+            </button>
           </div>
         </form>
       </div>
