@@ -16,6 +16,17 @@
   <body>
     <!--Header-->
     <header class="header small-container">
+      <div class="mobile-logo">
+        <a href="index.html" class="logo"
+          ><span class="logo-color">Web</span>Studio</a
+        >
+        <button class="menu-button js-open-menu is-open">
+          <!-- <i data-feather="menu"></i> -->
+          <svg class="menu">
+            <use href="./images/icons.svg#icon-mobile-menu"></use>
+          </svg>
+        </button>
+      </div>
       <div class="header-container">
         <a href="index.html" class="logo"
           ><span class="logo-color">Web</span>Studio</a
@@ -70,19 +81,21 @@
       <!--Buttons Section-->
       <div>
         <ul class="button-list">
-          <li><button type="button" class="button button-all">All</button></li>
-          <li>
+          <li class="button-all">
+            <button type="button" class="button button-all">All</button>
+          </li>
+          <li class="button-web-sites">
             <button type="button" class="button button-web-sites">
               Web-sites
             </button>
           </li>
-          <li>
+          <li class="button-apps">
             <button type="button" class="button button-apps">Apps</button>
           </li>
-          <li>
+          <li class="button-design">
             <button type="button" class="button button-design">Design</button>
           </li>
-          <li>
+          <li class="button-marketing">
             <button type="button" class="button button-marketing">
               Marketing
             </button>
@@ -255,79 +268,81 @@
     <!--Footer-->
     <footer class="footer container">
       <div class="small-container footer-container">
-        <div>
-          <a href="index.html" class="logo footer-logo"
-            ><span class="logo-color">Web</span
-            ><span class="logo-second-color">Studio</span></a
-          >
-          <!--Adress-->
-          <address>
-            <ul class="footer-contacts">
-              <li class="footer-location footer-adress">
-                <a
-                  href="https://www.google.com/maps/place/695+Park+Ave,+New+York,+NY+10065,+USA/@40.7688994,-73.9676005,17z/data=!3m1!4b1!4m6!3m5!1s0x89c258ebe8836e8f:0xa007c44e7c4aa0eb!8m2!3d40.7688994!4d-73.9650256!16s%2Fg%2F11c250btd8?entry=ttu"
-                  class="adress location"
-                  >695 Park Ave, NY 10065, USA</a
-                >
-              </li>
-              <li class="footer-adress">
-                <a href="mailto:info@devstudio.com" class="adress"
-                  >info@devstudio.com</a
-                >
-              </li>
-              <li class="footer-adress">
-                <a href="tel:+12127724150" class="adress">+1 212-772-4150</a>
-              </li>
-            </ul>
-          </address>
-        </div>
-        <div class="footer-icon-list">
-          <h3 class="footer-icon-title">Find us on</h3>
-          <div class="footer-icon-container">
-            <a
-              href="https://www.instagram.com/"
-              target="_blank"
-              rel="nofollow noopener noreferrer"
-              class="footer-icon"
-              aria-label="Instagram"
+        <div class="footer-adress-icon">
+          <div class="logo-adress">
+            <a href="index.html" class="logo footer-logo"
+              ><span class="logo-color">Web</span
+              ><span class="logo-second-color">Studio</span></a
             >
-              <svg>
-                <use href="./images/icons.svg#icon-instagram"></use>
-              </svg>
-            </a>
-            <a
-              href="https://www.twitter.com/"
-              target="_blank"
-              rel="nofollow noopener noreferrer"
-              class="footer-icon"
-              aria-label="Twitter"
-            >
-              <svg>
-                <use href="./images/icons.svg#icon-twitter"></use>
-              </svg>
-            </a>
-            <a
-              href="https://www.facebook.com/"
-              target="_blank"
-              rel="nofollow noopener noreferrer"
-              class="footer-icon"
-              aria-label="Facebook"
-            >
-              <svg>
-                <use href="./images/icons.svg#icon-facebook"></use>
-              </svg>
-            </a>
-            <a
-              href="https://www.linkedin.com/"
-              target="_blank"
-              rel="nofollow noopener noreferrer"
-              class="footer-icon"
-              aria-label="Linkedin"
-            >
-              <svg>
-                <use href="./images/icons.svg#icon-linkedin"></use>
-              </svg>
-            </a>
+            <!--Adress-->
+            <address>
+              <ul class="footer-contacts">
+                <li class="footer-location footer-adress">
+                  <a
+                    href="https://www.google.com/maps/place/695+Park+Ave,+New+York,+NY+10065,+USA/@40.7688994,-73.9676005,17z/data=!3m1!4b1!4m6!3m5!1s0x89c258ebe8836e8f:0xa007c44e7c4aa0eb!8m2!3d40.7688994!4d-73.9650256!16s%2Fg%2F11c250btd8?entry=ttu"
+                    class="adress location"
+                    >695 Park Ave, NY 10065, USA</a
+                  >
+                </li>
+                <li class="footer-adress">
+                  <a href="mailto:info@devstudio.com" class="adress"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="footer-adress">
+                  <a href="tel:+12127724150" class="adress">+1 212-772-4150</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer-icon-list">
+            <h3 class="footer-icon-title">Find us on</h3>
+            <div class="footer-icon-container">
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+                class="footer-icon"
+                aria-label="Instagram"
+              >
+                <svg>
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+              <a
+                href="https://www.twitter.com/"
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+                class="footer-icon"
+                aria-label="Twitter"
+              >
+                <svg>
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+                class="footer-icon"
+                aria-label="Facebook"
+              >
+                <svg>
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+              <a
+                href="https://www.linkedin.com/"
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+                class="footer-icon"
+                aria-label="Linkedin"
+              >
+                <svg>
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
         <form
@@ -338,14 +353,19 @@
         >
           <p class="form-info">Subscribe to the newsletter</p>
           <div class="input-button-container">
-            <label for="user_email"
+            <label for="user_email" class="subscribe-input"
               ><input
                 type="email"
                 name="email"
-                id="user_email"
+                id="subscribe-user-email"
                 placeholder="E-mail"
             /></label>
-            <button type="submit">Subscribe</button>
+            <button type="submit" class="subscribe-button">
+              <span>Subscribe</span>
+              <svg class="icon-send">
+                <use href="./images/icons.svg#icon-icon-send"></use>
+              </svg>
+            </button>
           </div>
         </form>
       </div>

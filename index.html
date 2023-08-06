@@ -14,13 +14,88 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body class="container">
-    <!--Header-->
+    <!-- Mobile-backdrop -->
+    <div class="js-menu-container">
+      <button class="menu-toggle js-close-menu">
+        <svg class="close-menu">
+          <use href="./images/icons.svg#icon-modal-close"></use>
+        </svg>
+      </button>
+      <div class="mobile-backdrop">
+        <nav class="mobile-navigation">
+          <ul class="mobile-list">
+            <li>
+              <a href="index.html">Studio</a>
+            </li>
+            <li>
+              <a href="portfolio.html">Portfolio</a>
+            </li>
+            <li><a href="">Contacts</a></li>
+          </ul>
+        </nav>
+        <ul class="mobile-contacts-list">
+          <li class="mobile-contacts">
+            <a
+              href="mailto:info@devstudio.com"
+              href="mailto:info@devstudio.com"
+              aria-label="Mail"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="mobile-contacts">
+            <a href="tel:+12127724150" aria-label="Phone number"
+              >+1 212-772-4150</a
+            >
+          </li>
+        </ul>
+        <ul class="mobile-social-media-group">
+          <li class="mobile-social-media">
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+              aria-label="Instagram"
+              >Instagram</a
+            >
+          </li>
+          <li class="mobile-social-media">
+            <a
+              href="https://www.twitter.com"
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+              aria-label="Twitter"
+              >Twitter</a
+            >
+          </li>
+          <li class="mobile-social-media">
+            <a
+              href="https://www.facebook.com"
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+              aria-label="Facebook"
+              >Facebook</a
+            >
+          </li>
+          <li class="mobile-social-media">
+            <a
+              href="https://www.linkedIn.com"
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+              aria-label="Linkedin"
+              >Linkedin</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!--------------------------------------------------Header-->
     <header class="header small-container">
       <div class="mobile-logo">
         <a href="index.html" class="logo"
           ><span class="logo-color">Web</span>Studio</a
         >
-        <button class="menu-button">
+        <button class="menu-button js-open-menu is-open">
+          <!-- <i data-feather="menu"></i> -->
           <svg class="menu">
             <use href="./images/icons.svg#icon-mobile-menu"></use>
           </svg>
@@ -587,11 +662,11 @@
         >
           <p class="form-info">Subscribe to the newsletter</p>
           <div class="input-button-container">
-            <label for="user_email"
+            <label for="user_email" class="subscribe-input"
               ><input
                 type="email"
                 name="email"
-                id="user_email"
+                id="subscribe-user-email"
                 placeholder="E-mail"
             /></label>
             <button type="submit" class="subscribe-button">
@@ -604,6 +679,7 @@
         </form>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
