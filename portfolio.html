@@ -14,6 +14,80 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+    <!-- Mobile-backdrop -->
+    <div class="js-menu-container">
+      <button class="menu-toggle js-close-menu">
+        <svg class="close-menu">
+          <use href="./images/icons.svg#icon-modal-close"></use>
+        </svg>
+      </button>
+      <div class="mobile-backdrop">
+        <nav class="mobile-navigation">
+          <ul class="mobile-list">
+            <li>
+              <a href="index.html">Studio</a>
+            </li>
+            <li>
+              <a href="portfolio.html">Portfolio</a>
+            </li>
+            <li><a href="">Contacts</a></li>
+          </ul>
+        </nav>
+        <ul class="mobile-contacts-list">
+          <li class="mobile-contacts">
+            <a
+              href="mailto:info@devstudio.com"
+              href="mailto:info@devstudio.com"
+              aria-label="Mail"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="mobile-contacts">
+            <a href="tel:+12127724150" aria-label="Phone number"
+              >+1 212-772-4150</a
+            >
+          </li>
+        </ul>
+        <ul class="mobile-social-media-group">
+          <li class="mobile-social-media">
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+              aria-label="Instagram"
+              >Instagram</a
+            >
+          </li>
+          <li class="mobile-social-media">
+            <a
+              href="https://www.twitter.com"
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+              aria-label="Twitter"
+              >Twitter</a
+            >
+          </li>
+          <li class="mobile-social-media">
+            <a
+              href="https://www.facebook.com"
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+              aria-label="Facebook"
+              >Facebook</a
+            >
+          </li>
+          <li class="mobile-social-media">
+            <a
+              href="https://www.linkedIn.com"
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+              aria-label="Linkedin"
+              >Linkedin</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
     <!--Header-->
     <header class="header small-container">
       <div class="mobile-logo">
@@ -107,13 +181,32 @@
         <ul class="project">
           <li class="project-animation">
             <div class="project-animation">
-              <img
-                class="project-image"
-                width="370"
-                height="294"
-                src="images/technoduck.jpg"
-                alt="Website Picture"
-              />
+              <picture>
+                <source
+                  media="(min-width:1170px)"
+                  srcset="
+                    images/technoduck-d.png,
+                    images/technoduck-d-2x.png
+                  " />
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    images/technoduck-t.png,
+                    images/technoduck-t-2x.png
+                  " />
+                <source
+                  media="(min-width:480px)"
+                  srcset="
+                    images/technoduck-m.png,
+                    images/technoduck-m-2x.png
+                  " />
+                <img
+                  class="project-image"
+                  width="370"
+                  height="294"
+                  src="images/technoduck-d.png"
+                  alt="Website Picture"
+              /></picture>
               <div class="overlay">
                 <p class="overlay-text">
                   Technoduck is a state-of-the-art coronavirus distribution
@@ -126,16 +219,25 @@
             <p class="project-type">Web-site</p>
           </li>
         </ul>
-
         <ul class="project">
           <li class="project-animation">
             <div class="project-animation">
-              <img
-                width="370"
-                height="294"
-                src="images/poster.jpg"
-                alt="Poster of 2 basketball players"
-              />
+              <picture>
+                <source
+                  media="(min-width:1170px)"
+                  srcset="images/poster-d.png, images/poster-d-2x.png" />
+                <source
+                  media="(min-width:768px)"
+                  srcset="images/poster-t.png, images/poster-t-2x.png" />
+                <source
+                  media="(min-width:480px)"
+                  srcset="images/poster-m.png, images/poster-m-2x.png" />
+                <img
+                  width="370"
+                  height="294"
+                  src="images/poster-d.png"
+                  alt="Poster of 2 basketball players"
+              /></picture>
               <div class="overlay">
                 <p class="overlay-text">Poster New Orlean vs Golden Star</p>
               </div>
@@ -147,12 +249,22 @@
         <ul class="project">
           <li class="project-animation">
             <div class="project-animation">
-              <img
-                width="370"
-                height="294"
-                src="images/seafood-restaurant.jpg"
-                alt="Restaurant Logo"
-              />
+              <picture>
+                <source
+                  media="(min-width:1170px)"
+                  srcset="images/seafood-d.png, images/seafood-d-2x.png" />
+                <source
+                  media="(min-width:768px)"
+                  srcset="images/seafood-t.png, images/seafood-t-2x.png" />
+                <source
+                  media="(min-width:480px)"
+                  srcset="images/seafood-m.png, images/seafood-m-2x.png" />
+                <img
+                  width="370"
+                  height="294"
+                  src="images/seafood-d.png"
+                  alt="Restaurant Logo"
+              /></picture>
               <div class="overlay">
                 <p class="overlay-text">Seafood Restaurant</p>
               </div>
@@ -164,12 +276,31 @@
         <ul class="project">
           <li class="project-animation">
             <div class="project-animation">
-              <img
-                width="370"
-                height="294"
-                src="images/project-prime.jpg"
-                alt="Black Headphones"
-              />
+              <picture>
+                <source
+                  media="(min-width:1170px)"
+                  srcset="
+                    images/project-prime-d.png,
+                    images/project-prime-d-2x.png
+                  " />
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    images/project-prime-t.png,
+                    images/project-prime-t-2x.png
+                  " />
+                <source
+                  media="(min-width:480px)"
+                  srcset="
+                    images/project-prime-m.png,
+                    images/project-prime-m-2x.png
+                  " />
+                <img
+                  width="370"
+                  height="294"
+                  src="images/project-prime-d.png"
+                  alt="Black Headphones"
+              /></picture>
               <div class="overlay">
                 <p class="overlay-text">Project Prime</p>
               </div>
@@ -181,12 +312,31 @@
         <ul class="project">
           <li class="project-animation">
             <div class="project-animation">
-              <img
-                width="370"
-                height="294"
-                src="images/project-boxes.jpg"
-                alt="2 Boxes"
-              />
+              <picture>
+                <source
+                  media="(min-width:1170px)"
+                  srcset="
+                    images/project-boxes-d.png,
+                    images/project-boxes-d-2x.png
+                  " />
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    images/project-boxes-t.png,
+                    images/project-boxes-t-2x.png
+                  " />
+                <source
+                  media="(min-width:480px)"
+                  srcset="
+                    images/project-boxes-m.png,
+                    images/project-boxes-m-2x.png
+                  " />
+                <img
+                  width="370"
+                  height="294"
+                  src="images/project-boxes-d.png"
+                  alt="2 Boxes"
+              /></picture>
               <div class="overlay">
                 <p class="overlay-text">Project Boxes</p>
               </div>
@@ -198,12 +348,31 @@
         <ul class="project">
           <li class="project-animation">
             <div class="project-animation">
-              <img
-                width="370"
-                height="294"
-                src="images/inspiration.jpg"
-                alt="Website Homescreen"
-              />
+              <picture>
+                <source
+                  media="(min-width:1170px)"
+                  srcset="
+                    images/inspiration-d.png,
+                    images/inspiration-d-2x.png
+                  " />
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    images/inspiration-t.png,
+                    images/inspiration-t-2x.png
+                  " />
+                <source
+                  media="(min-width:480px)"
+                  srcset="
+                    images/inspiration-m.png,
+                    images/inspiration-m-2x.png
+                  " />
+                <img
+                  width="370"
+                  height="294"
+                  src="images/inspiration-d.png"
+                  alt="Website Homescreen"
+              /></picture>
               <div class="overlay">
                 <p class="overlay-text">Inspiration has no Borders</p>
               </div>
@@ -215,12 +384,31 @@
         <ul class="project">
           <li class="project-animation">
             <div class="project-animation">
-              <img
-                width="370"
-                height="294"
-                src="images/limited-edition.jpg"
-                alt="Open Book"
-              />
+              <picture>
+                <source
+                  media="(min-width:1170px)"
+                  srcset="
+                    images/limited-edition-d.png,
+                    images/limited-edition-d-2x.png
+                  " />
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    images/limited-edition-t.png,
+                    images/limited-edition-t-2x.png
+                  " />
+                <source
+                  media="(min-width:480px)"
+                  srcset="
+                    images/limited-edition-m.png,
+                    images/limited-edition-m-2x.png
+                  " />
+                <img
+                  width="370"
+                  height="294"
+                  src="images/limited-edition-d.png"
+                  alt="Open Book"
+              /></picture>
               <div class="overlay">
                 <p class="overlay-text">Limited Edition</p>
               </div>
@@ -232,12 +420,31 @@
         <ul class="project">
           <li class="project-animation">
             <div class="project-animation">
-              <img
-                width="370"
-                height="294"
-                src="images/project-lab.jpg"
-                alt="white tag"
-              />
+              <picture>
+                <source
+                  media="(min-width:1170px)"
+                  srcset="
+                    images/project-lab-d.png,
+                    images/project-lab-d-2x.png
+                  " />
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    images/project-lab-t.png,
+                    images/project-lab-t-2x.png
+                  " />
+                <source
+                  media="(min-width:480px)"
+                  srcset="
+                    images/project-lab-m.png,
+                    images/project-lab-m-2x.png
+                  " />
+                <img
+                  width="370"
+                  height="294"
+                  src="images/project-lab-d.png"
+                  alt="white tag"
+              /></picture>
               <div class="overlay">
                 <p class="overlay-text">Project LAB</p>
               </div>
@@ -249,12 +456,31 @@
         <ul class="project">
           <li class="project-animation">
             <div class="project-animation">
-              <img
-                width="370"
-                height="294"
-                src="images/growing-business.jpg"
-                alt="Typing on Laptop keyboard"
-              />
+              <picture>
+                <source
+                  media="(min-width:1170px)"
+                  srcset="
+                    images/growing-business-d.png,
+                    images/growing-business-d-2x.png
+                  " />
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    images/growing-business-t.png,
+                    images/growing-business-t-2x.png
+                  " />
+                <source
+                  media="(min-width:480px)"
+                  srcset="
+                    images/growing-business-m.png,
+                    images/growing-business-m-2x.png
+                  " />
+                <img
+                  width="370"
+                  height="294"
+                  src="images/growing-business-d.png"
+                  alt="Typing on Laptop keyboard"
+              /></picture>
               <div class="overlay">
                 <p class="overlay-text">Growing Business</p>
               </div>
@@ -370,5 +596,6 @@
         </form>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

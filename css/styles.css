@@ -58,10 +58,6 @@ body {
   height: 40px;
   flex-shrink: 0;
 }
-.menu-button:hover,
-.menu-button:focus {
-  color: var(--brand-color);
-}
 .container {
   width: 100%;
   margin: 0 auto;
@@ -74,6 +70,10 @@ body {
   background: transparent;
   border: none;
   cursor: pointer;
+}
+.menu-button:hover,
+.menu-button:focus {
+  color: var(--brand-color);
 }
 /*---------------------------------------logo*/
 .logo {
@@ -156,6 +156,7 @@ body {
   font-size: 24px;
   font-weight: 500;
   letter-spacing: 0.48px;
+  text-decoration: none;
 }
 .mobile-social-media-group {
   display: flex;
@@ -187,12 +188,25 @@ body {
   width: 100%;
   padding: 118px auto;
   background-color: rgba(47, 48, 58, 0.4);
-  background-image: url("../images/mobile-header-img.png"),
+  background-image: url("../images/main-title-section-image-m.png"),
     linear-gradient(to right, rgba(47, 48, 58, 1) 20%, rgba(82, 83, 98, 1) 62%);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   padding-bottom: 118px;
+}
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .main-title-section {
+    background-image: url("../images/main-title-section-image-m-2x.png"),
+      linear-gradient(
+        to right,
+        rgba(47, 48, 58, 1) 20%,
+        rgba(82, 83, 98, 1) 62%
+      );
+  }
 }
 .main-title {
   display: none;
@@ -534,10 +548,9 @@ body {
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   margin: 0 auto;
 }
-
 .card img {
-  width: 450px;
-  height: 460px;
+  width: 100%;
+  height: auto;
   flex-shrink: 0;
 }
 .team-list {
@@ -573,7 +586,6 @@ body {
   margin-bottom: 24px;
   gap: 10px;
 }
-
 .team-icon-list .team-icon {
   width: 44px;
   height: 44px;
@@ -596,7 +608,6 @@ body {
   width: 20px;
   height: 20px;
 }
-
 /* Regular customers */
 .regular-customers {
   display: flex;
@@ -653,7 +664,6 @@ body {
   fill: var(--brand-color);
 }
 /*-----------------------------------Portfolio page*/
-
 /*Buttons*/
 .button-list {
   display: flex;
@@ -715,6 +725,9 @@ body {
 }
 .project-animation {
   position: relative;
+  width: 100%;
+}
+.project-animation img {
   width: 100%;
 }
 .overlay {
@@ -913,7 +926,7 @@ body {
   background: rgba(33, 150, 243, 0);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   color: rgba(255, 255, 255, 1);
-  transition-property: border box-shadow;
+  transition-property: border, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -922,9 +935,6 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 0 15px;
-}
-.subscribe-user-email {
-  width: 450px;
 }
 .input-button-container input:hover[type="email"],
 .input-button-container input:focus[type="email"] {
@@ -957,6 +967,70 @@ body {
   align-items: center;
   gap: 25px;
   padding: 10px 28px 10px 43px;
+}
+/* small phones------------------------ */
+@media screen and (max-width: 479px) {
+  .header {
+    width: 100%;
+  }
+  .js-menu-container {
+    width: 250px;
+  }
+  .mobile-social-media-group {
+    flex-direction: column;
+  }
+  .mobile-social-media a {
+    border: none;
+  }
+  .modal-content {
+    width: 95%;
+  }
+  .modal-label {
+    width: 95%;
+  }
+  .modal-label input {
+    width: 100%;
+  }
+  .modal-label-textarea {
+    width: 95%;
+  }
+  .modal-label-textarea textarea {
+    width: 100%;
+  }
+  .test {
+    padding-left: 3%;
+    width: 80%;
+  }
+  .qualities-rect {
+    width: 250px;
+  }
+  .qualities-content {
+    width: 250px;
+  }
+  .card {
+    width: 100%;
+    margin: auto 5px;
+  }
+  .card img {
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+  }
+  .button-list {
+    padding-left: 5px;
+  }
+  .project {
+    width: 100%;
+  }
+  .project-animation img {
+    width: 100%;
+    height: auto;
+  }
+  .input-button-container input[type="email"] {
+    padding: 5px 6px;
+    width: 250px;
+    height: 50px;
+  }
 }
 /* --------------------Tablet----------------------- */
 @media screen and (min-width: 768px) {
@@ -996,17 +1070,25 @@ body {
     padding-right: 114px;
   }
   .main-title-section {
-    width: 100%;
-    background-color: rgba(47, 48, 58, 0.4);
-    background-image: url("../images/main-title-section-image.jpg"),
+    background-image: url("../images/main-title-section-image-t.png"),
       linear-gradient(
         to right,
         rgba(47, 48, 58, 1) 20%,
         rgba(82, 83, 98, 1) 62%
       );
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .main-title-section {
+      background-image: url("../images/main-title-section-image-t-2x.png"),
+        linear-gradient(
+          to right,
+          rgba(47, 48, 58, 1) 20%,
+          rgba(82, 83, 98, 1) 62%
+        );
+    }
   }
   /*Links*/
   .link {
@@ -1289,17 +1371,13 @@ body {
     border: 0;
   }
   .header-container {
-    justify-content: space-between;
     padding-left: 0;
     padding-right: 0;
   }
   .header-contacts {
-    display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 40px;
-    justify-content: center;
-    align-items: center;
   }
   .navigation {
     padding-right: 330px;
@@ -1308,6 +1386,25 @@ body {
   .main-title-section {
     padding-top: 200px;
     padding-bottom: 280px;
+    background-image: url("../images/main-title-section-image-d.png"),
+      linear-gradient(
+        to right,
+        rgba(47, 48, 58, 1) 20%,
+        rgba(82, 83, 98, 1) 62%
+      );
+  }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .main-title-section {
+      background-image: url("../images/main-title-section-image-d-2x.png"),
+        linear-gradient(
+          to right,
+          rgba(47, 48, 58, 1) 20%,
+          rgba(82, 83, 98, 1) 62%
+        );
+    }
   }
   .m-t-main-title {
     display: none;

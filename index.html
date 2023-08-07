@@ -281,29 +281,53 @@
         <h2 class="title-what-we-do">What we do</h2>
         <div class="what-we-do-images">
           <div class="what-we-do-container">
-            <img
-              class="image"
-              height="294"
-              width="370"
-              src="images/coding.jpg"
-              alt="typing on keyboard"
-            />
+            <picture>
+              <source
+                media="(min-width:1170px)"
+                srcset="images/coding.png, images/coding-2x.png"
+              />
+              <source />
+              <img
+                class="image"
+                height="294"
+                width="370"
+                src="images/coding.png"
+                alt="typing on keyboard"
+              />
+            </picture>
             <p class="what-we-do-paragraph">DESKTOP APPS</p>
           </div>
           <div class="what-we-do-container">
-            <img
-              class="image"
-              src="images/mobile-development.jpg"
-              alt="mobile development"
-            />
+            <picture>
+              <source
+                media="(min-width:1170px)"
+                srcset="
+                  images/mobile-development.png,
+                  images/mobile-development-2x.png
+                "
+              />
+              <source />
+              <img
+                class="image"
+                src="images/mobile-development.png"
+                alt="mobile development"
+              />
+            </picture>
             <p class="what-we-do-paragraph">Mobile APPS</p>
           </div>
           <div class="what-we-do-container">
-            <img
-              class="image"
-              src="images/choosing-color.jpg"
-              alt="choosing color"
-            />
+            <picture>
+              <source
+                media="(min-width:1170px)"
+                srcset="images/choosing-color.png, images/choosing-color-2x.png"
+              />
+              <source />
+              <img
+                class="image"
+                src="images/choosing-color.png"
+                alt="choosing color"
+              />
+            </picture>
             <p class="what-we-do-paragraph">DESIGN SOLUTIONS</p>
           </div>
         </div>
@@ -313,12 +337,23 @@
         <h2 class="title-our-team">Our Team</h2>
         <ul class="team-list">
           <li class="card">
-            <img
-              width="270"
-              height="260"
-              src="images/walker.jpg"
-              alt="photo of Christopher Walker"
-            />
+            <!-- Picture replacement -->
+            <picture>
+              <source
+                media="(min-width:1170px)"
+                srcset="images/walker-d.png, images/walker-d-2x.png" />
+              <source
+                media="(min-width:768px)"
+                srcset="images/walker-t.png, images/walker-t-2x.png" />
+              <source
+                media="(min-width:480px)"
+                srcset="images/walker-m.png, images/walker-m-2x.png" />
+              <img
+                width="270"
+                height="260"
+                src="./images/walker-d.png"
+                alt="photo of Christopher Walker"
+            /></picture>
             <h3 class="our-team-member">Christopher Walker</h3>
             <p class="our-team-jobs">Product Designer</p>
             <div class="team-icon-list">
@@ -369,12 +404,22 @@
             </div>
           </li>
           <li class="card">
-            <img
-              width="270"
-              height="260"
-              src="images/evans.jpg"
-              alt="photo of Kylie Evans"
-            />
+            <picture>
+              <source
+                media="(min-width:1170px)"
+                srcset="images/evans-d.png, images/evans-d-2x.png" />
+              <source
+                media="(min-width:768px)"
+                srcset="images/evans-t.png, images/evans-t-2x.png" />
+              <source
+                media="(min-width:480px)"
+                srcset="images/evans-m.png, images/evans-m-2x.png" />
+              <img
+                width="270"
+                height="260"
+                src="images/evans-d.png"
+                alt="photo of Kylie Evans"
+            /></picture>
             <h3 class="our-team-member">Kylie Evans</h3>
             <p class="our-team-jobs">Frontend Developer</p>
             <div class="team-icon-list">
@@ -425,12 +470,22 @@
             </div>
           </li>
           <li class="card">
-            <img
-              width="270"
-              height="260"
-              src="images/harris.jpg"
-              alt="photo of Ryan Harris"
-            />
+            <picture>
+              <source
+                media="(min-width:1170px)"
+                srcset="images/harris-d.png, images/harris-d-2x.png" />
+              <source
+                media="(min-width:768px)"
+                srcset="images/harris-t.png, images/harris-t-2x.png" />
+              <source
+                media="(min-width:480px)"
+                srcset="images/harris-m.png, images/harris-m-2x.png" />
+              <img
+                width="270"
+                height="260"
+                src="images/harris-d.png"
+                alt="photo of Ryan Harris"
+            /></picture>
             <h3 class="our-team-member">Ryan Harris</h3>
             <p class="our-team-jobs">Marketing</p>
             <div class="team-icon-list">
@@ -481,12 +536,22 @@
             </div>
           </li>
           <li class="card">
-            <img
-              width="270"
-              height="260"
-              src="images/moore.jpg"
-              alt="photo of Tyler Moore"
-            />
+            <picture>
+              <source
+                media="(min-width:1170px)"
+                srcset="images/moore-d.png, images/moore-d-2x.png" />
+              <source
+                media="(min-width:768px)"
+                srcset="images/moore-t.png, images/moore-t-2x.png" />
+              <source
+                media="(min-width:480px)"
+                srcset="images/moore-m.png, images/moore-m-2x.png" />
+              <img
+                width="270"
+                height="260"
+                src="images/moore-d.png"
+                alt="photo of Tyler Moore"
+            /></picture>
             <h3 class="our-team-member">Tyler Moore</h3>
             <p class="our-team-jobs">UI Designer</p>
             <div class="team-icon-list">
@@ -668,6 +733,7 @@
                 name="email"
                 id="subscribe-user-email"
                 placeholder="E-mail"
+                class="footer-input"
             /></label>
             <button type="submit" class="subscribe-button">
               <span>Subscribe</span>
